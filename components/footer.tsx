@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Zap, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Heart } from "lucide-react"
+import Image from "next/image"
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Heart } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -7,9 +8,19 @@ export default function Footer() {
       <div className="container px-4 md:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <Zap className="h-6 w-6 text-green-500" />
-              <span className="text-xl font-bold text-white">Chargeway</span>
+            <Link href="/" className="flex items-center gap-2 mb-4 group">
+              <div className="relative h-8 w-8 transform transition-transform group-hover:rotate-12">
+                <Image 
+                  src="/chargeway.png" 
+                  alt="Chargeway Logo" 
+                  fill 
+                  className="object-contain"
+                />
+              </div>
+              <span className="text-xl font-bold">
+                <span className="text-green-400">Charge</span>
+                <span className="text-green-700">way</span>
+              </span>
             </Link>
             <p className="text-sm mb-4">
               Find EV charging stations, hospitals, restaurants, and more with our interactive map.

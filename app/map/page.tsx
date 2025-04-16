@@ -2,8 +2,6 @@
 
 import { useState, useEffect } from "react"
 import { MapPin, Navigation, ArrowRight, Search, Star, ChevronLeft, Compass } from "lucide-react"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
 import LocationSelector from "@/components/location-selector"
 import MapView from "@/components/map-view"
 import { useFavorites } from "@/hooks/use-favorites"
@@ -59,7 +57,6 @@ export default function MapPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-50">
-      <Header />
 
       <main className="flex-1">
         {step === 1 ? (
@@ -196,8 +193,6 @@ export default function MapPage() {
           </div>
         )}
       </main>
-
-      <Footer />
     </div>
   )
 }

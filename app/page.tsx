@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { 
   ChevronRight, 
@@ -13,18 +14,15 @@ import {
   Leaf,
   Map
 } from "lucide-react"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
 import FeatureCard from "@/components/feature-card"
 import HowItWorks from "@/components/how-it-works"
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      <Header />
 
-      {/* Hero Section - Enhanced with gradient overlay and wave pattern */}
-      <section className="relative bg-gradient-to-br from-green-50 via-green-100 to-white py-24 md:py-36 overflow-hidden">
+      {/* Hero Section */}
+      <section id="home" className="relative bg-gradient-to-br from-green-50 via-green-100 to-white py-24 md:py-36 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at 25px 25px, rgba(0, 128, 0, 0.2) 2%, transparent 0%), radial-gradient(circle at 75px 75px, rgba(0, 128, 0, 0.2) 2%, transparent 0%)", backgroundSize: "100px 100px" }}></div>
         </div>
@@ -39,9 +37,24 @@ export default function Home() {
                 </div>
               </div>
               
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+              <div className="flex items-center mb-4">
+                <div className="relative h-16 w-16 mr-4">
+                  <Image 
+                    src="/chargeway.png" 
+                    alt="Chargeway Logo" 
+                    fill 
+                    className="object-contain"
+                  />
+                </div>
+                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-6xl">
+                  <span className="text-green-400">Charge</span>
+                  <span className="text-green-700">way</span>
+                </h1>
+              </div>
+              
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Find EV Charging <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-400">Anywhere</span>
-              </h1>
+              </h2>
               
               <p className="max-w-[600px] text-gray-700 md:text-xl leading-relaxed">
                 Locate the nearest electric vehicle charging stations, hospitals, restaurants, and more with our
@@ -51,17 +64,19 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 mt-2">
                 <Link href="/map">
                   <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group flex items-center">
-                    Get Started 
+                    Find Chargers 
                     <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
                 
-                <Button
-                  variant="outline"
-                  className="border-2 border-green-600 text-green-600 hover:bg-green-50 px-8 py-6 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
-                >
-                  Learn More
-                </Button>
+                <Link href="#features">
+                  <Button
+                    variant="outline"
+                    className="border-2 border-green-600 text-green-600 hover:bg-green-50 px-8 py-6 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+                  >
+                    Learn More
+                  </Button>
+                </Link>
               </div>
             </div>
             
@@ -138,13 +153,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section - Enhanced with cards */}
-      <section className="py-24">
+      {/* Features Section */}
+      <section id="features" className="py-24">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Why Choose <span className="text-green-600">Chargeway</span>
-            </h2>
+            <div className="flex items-center justify-center mb-4">
+              <div className="relative h-10 w-10 mr-2">
+                <Image 
+                  src="/chargeway.png" 
+                  alt="Chargeway Logo" 
+                  fill 
+                  className="object-contain"
+                />
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Why Choose <span className="text-green-600">Chargeway</span>
+              </h2>
+            </div>
             <p className="mt-4 text-gray-600 md:text-xl max-w-3xl mx-auto">
               Our platform offers comprehensive features to make your EV journey seamless and worry-free.
             </p>
@@ -188,8 +213,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works Section - Enhanced with gradient background */}
-      <section className="py-24 relative overflow-hidden">
+      {/* How It Works Section */}
+      <section id="how-it-works" className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-green-50"></div>
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at 25px 25px, rgba(0, 128, 0, 0.2) 2%, transparent 0%), radial-gradient(circle at 75px 75px, rgba(0, 128, 0, 0.2) 2%, transparent 0%)", backgroundSize: "100px 100px" }}></div>
@@ -197,9 +222,19 @@ export default function Home() {
         
         <div className="container px-4 md:px-6 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              How <span className="text-green-600">It Works</span>
-            </h2>
+            <div className="flex items-center justify-center mb-4">
+              <div className="relative h-10 w-10 mr-2">
+                <Image 
+                  src="/chargeway.png" 
+                  alt="Chargeway Logo" 
+                  fill 
+                  className="object-contain"
+                />
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                How <span className="text-green-600">It Works</span>
+              </h2>
+            </div>
             <p className="mt-4 text-gray-600 md:text-xl max-w-3xl mx-auto">
               Finding charging stations and planning your route is simple with Chargeway.
             </p>
@@ -212,9 +247,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section - New */}
+      {/* Stats Section */}
       <section className="py-16 bg-white">
         <div className="container px-4 md:px-6">
+          <div className="flex items-center justify-center mb-8">
+            <div className="relative h-12 w-12 mr-3">
+              <Image 
+                src="/chargeway.png" 
+                alt="Chargeway Logo" 
+                fill 
+                className="object-contain"
+              />
+            </div>
+            <h2 className="text-2xl font-bold text-green-600">Chargeway by the Numbers</h2>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="flex flex-col items-center text-center">
               <div className="text-4xl font-bold text-green-600 mb-2">10k+</div>
@@ -236,13 +282,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section - New */}
+      {/* Testimonials Section */}
       <section className="py-20 bg-gray-50">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-              What Our Users <span className="text-green-600">Say</span>
-            </h2>
+            <div className="flex items-center justify-center mb-4">
+              <div className="relative h-8 w-8 mr-2">
+                <Image 
+                  src="/chargeway.png" 
+                  alt="Chargeway Logo" 
+                  fill 
+                  className="object-contain"
+                />
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                What Our Users <span className="text-green-600">Say</span>
+              </h2>
+            </div>
             <div className="mt-6 flex justify-center">
               <div className="h-1 w-20 bg-gradient-to-r from-green-400 to-green-600 rounded-full"></div>
             </div>
@@ -297,8 +353,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section - Enhanced with more visual appeal */}
-      <section className="py-20 relative overflow-hidden">
+      {/* CTA Section */}
+      <section id="about" className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-green-500"></div>
         <div className="absolute inset-0 opacity-10">
           <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
@@ -313,7 +369,14 @@ export default function Home() {
         
         <div className="container px-4 md:px-6 relative z-10">
           <div className="flex flex-col items-center text-center space-y-6 max-w-3xl mx-auto">
-            <Map className="h-16 w-16 text-white opacity-80" />
+            <div className="relative h-24 w-24 bg-white rounded-full p-2 shadow-lg">
+              <Image 
+                src="/chargeway.png" 
+                alt="Chargeway Logo" 
+                fill 
+                className="object-contain"
+              />
+            </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
               Ready to Start Your Journey?
             </h2>
@@ -323,22 +386,22 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link href="/map">
                 <Button className="bg-white text-green-600 hover:bg-green-50 px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group flex items-center">
-                  Get Started 
+                  Find Chargers 
                   <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Button
-                variant="outline"
-                className="border-2 border-white text-white hover:bg-white/10 px-8 py-6 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
-              >
-                Learn More
-              </Button>
+              <Link href="#features">
+                <Button
+                  variant="outline"
+                  className="border-2 border-white text-white bg-transparent hover:bg-white/10 px-8 py-6 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+                >
+                  Learn More
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }
