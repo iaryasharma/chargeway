@@ -14,7 +14,7 @@ export default function HowItWorks() {
         </div>
         <h3 className="text-xl font-semibold mb-2">Choose Your Location</h3>
         <p className="text-gray-600">
-          Select your current location or enter a destination to find nearby charging stations.
+          Enter a destination to find nearby charging stations.
         </p>
       </div>
 

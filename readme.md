@@ -3,6 +3,13 @@
 
 Chargeway is a web application designed to help users find electric vehicle (EV) charging stations across India. Whether you're planning a trip or just looking for the nearest charging point, Chargeway ensures you're always powered up. It features a sleek UI, intuitive search functionalities, and real-time data from reliable APIs.
 
+## 👥 Project Authors
+
+Built with ❤️ by:
+
+- [Arya Sharma](https://github.com/iaryasharma)
+- [Vijay Kumar](https://github.com/hii-vijayy)  
+
 ## Features
 
 - ⚡ Find nearby EV charging stations
@@ -98,8 +105,3 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 ## License
 
 [MIT](LICENSE)
-
-## Author
-
-Made with ❤️ by [Arya Sharma](https://github.com/iaryasharma)
-
