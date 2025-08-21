@@ -1,0 +1,38 @@
+# Robots.txt for Chargeway.in - EV Charging Station Finder
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://chargeway.in/sitemap.xml
+
+# Allow search engines to crawl important pages
+Allow: /map
+Allow: /api/
+Allow: /about
+Allow: /contact
+Allow: /help
+
+# Disallow admin/private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /api/internal/
+
+# Allow Google, Bing, and other major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Crawl delay (optional - helps prevent overloading)
+Crawl-delay: 1
+
+# Host directive (helps with canonicalization)
+Host: https://chargeway.in

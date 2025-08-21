@@ -1,16 +1,16 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { 
-  ChevronRight, 
-  Zap, 
-  MapPin, 
-  Navigation, 
-  Clock, 
-  Heart, 
-  Shield, 
-  ArrowRight, 
-  Battery, 
+import {
+  ChevronRight,
+  Zap,
+  MapPin,
+  Navigation,
+  Clock,
+  Heart,
+  Shield,
+  ArrowRight,
+  Battery,
   Leaf,
   Map
 } from "lucide-react"
@@ -26,7 +26,7 @@ export default function Home() {
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at 25px 25px, rgba(0, 128, 0, 0.2) 2%, transparent 0%), radial-gradient(circle at 75px 75px, rgba(0, 128, 0, 0.2) 2%, transparent 0%)", backgroundSize: "100px 100px" }}></div>
         </div>
-        
+
         <div className="container px-4 md:px-6 relative z-10">
           <div className="grid gap-6 lg:grid-cols-12 items-center">
             <div className="flex flex-col justify-center space-y-6 lg:col-span-7">
@@ -36,13 +36,13 @@ export default function Home() {
                   <span>Eco-Friendly Navigation</span>
                 </div>
               </div>
-              
+
               <div className="flex items-center mb-4">
                 <div className="relative h-16 w-16 mr-4">
-                  <Image 
-                    src="/chargeway.png" 
-                    alt="Chargeway Logo" 
-                    fill 
+                  <Image
+                    src="/chargeway.png"
+                    alt="Chargeway Logo"
+                    fill
                     className="object-contain"
                   />
                 </div>
@@ -51,24 +51,24 @@ export default function Home() {
                   <span className="text-green-700">way</span>
                 </h1>
               </div>
-              
+
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Find EV Charging <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-400">Anywhere</span>
               </h2>
-              
+
               <p className="max-w-[600px] text-gray-700 md:text-xl leading-relaxed">
                 Locate the nearest electric vehicle charging stations, hospitals, restaurants, and more with our
                 interactive map system designed for the modern EV driver.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 mt-2">
                 <Link href="/map">
                   <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group flex items-center">
-                    Find Chargers 
+                    Find Chargers
                     <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
-                
+
                 <Link href="#features">
                   <Button
                     variant="outline"
@@ -79,7 +79,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            
+
             <div className="lg:col-span-5 p-8">
               <div className="relative rounded-2xl bg-gradient-to-br from-green-200 to-green-50 p-1 shadow-xl">
                 <div className="bg-white rounded-xl p-6 space-y-4">
@@ -97,7 +97,7 @@ export default function Home() {
                       <div className="text-sm font-medium">Offline</div>
                     </div>
                   </div>
-                  
+
                   <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
                     <div className="flex items-center space-x-3">
                       <Battery className="h-6 w-6 text-green-600" />
@@ -108,7 +108,7 @@ export default function Home() {
                     </div>
                     <div className="text-green-600 font-medium">6/8 Available</div>
                   </div>
-                  
+
                   <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
                     <div className="flex items-center space-x-3">
                       <Battery className="h-6 w-6 text-yellow-600" />
@@ -119,7 +119,7 @@ export default function Home() {
                     </div>
                     <div className="text-yellow-600 font-medium">2/4 Available</div>
                   </div>
-                  
+
                   <div className="bg-gray-50 rounded-lg p-4 flex justify-between items-center">
                     <div className="flex items-center space-x-3">
                       <Battery className="h-6 w-6 text-green-600" />
@@ -130,7 +130,7 @@ export default function Home() {
                     </div>
                     <div className="text-green-600 font-medium">3/3 Available</div>
                   </div>
-                  
+
                   <Link href="/map" className="flex items-center justify-center text-green-600 hover:text-green-700 font-medium">
                     View all nearby stations
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -159,10 +159,10 @@ export default function Home() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-4">
               <div className="relative h-10 w-10 mr-2">
-                <Image 
-                  src="/chargeway.png" 
-                  alt="Chargeway Logo" 
-                  fill 
+                <Image
+                  src="/chargeway.png"
+                  alt="Chargeway Logo"
+                  fill
                   className="object-contain"
                 />
               </div>
@@ -219,15 +219,15 @@ export default function Home() {
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at 25px 25px, rgba(0, 128, 0, 0.2) 2%, transparent 0%), radial-gradient(circle at 75px 75px, rgba(0, 128, 0, 0.2) 2%, transparent 0%)", backgroundSize: "100px 100px" }}></div>
         </div>
-        
+
         <div className="container px-4 md:px-6 relative z-10">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-4">
               <div className="relative h-10 w-10 mr-2">
-                <Image 
-                  src="/chargeway.png" 
-                  alt="Chargeway Logo" 
-                  fill 
+                <Image
+                  src="/chargeway.png"
+                  alt="Chargeway Logo"
+                  fill
                   className="object-contain"
                 />
               </div>
@@ -252,10 +252,10 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="flex items-center justify-center mb-8">
             <div className="relative h-12 w-12 mr-3">
-              <Image 
-                src="/chargeway.png" 
-                alt="Chargeway Logo" 
-                fill 
+              <Image
+                src="/chargeway.png"
+                alt="Chargeway Logo"
+                fill
                 className="object-contain"
               />
             </div>
@@ -288,10 +288,10 @@ export default function Home() {
           <div className="text-center mb-12">
             <div className="flex items-center justify-center mb-4">
               <div className="relative h-8 w-8 mr-2">
-                <Image 
-                  src="/chargeway.png" 
-                  alt="Chargeway Logo" 
-                  fill 
+                <Image
+                  src="/chargeway.png"
+                  alt="Chargeway Logo"
+                  fill
                   className="object-contain"
                 />
               </div>
@@ -319,7 +319,7 @@ export default function Home() {
               </div>
               <p className="text-gray-600">"Chargeway has made my long-distance EV trips so much easier. I can find charging stations along my route and plan my stops efficiently."</p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-2xl shadow-md">
               <div className="flex items-center mb-4">
                 <div className="flex-shrink-0">
@@ -334,7 +334,7 @@ export default function Home() {
               </div>
               <p className="text-gray-600">"I love that I can see real-time availability of charging stations. No more surprises when I arrive at a station only to find all chargers in use."</p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-2xl shadow-md">
               <div className="flex items-center mb-4">
                 <div className="flex-shrink-0">
@@ -353,6 +353,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Charging Rental Coming Soon Section */}
+      <section className="py-16 bg-gradient-to-r from-blue-50 to-green-50">
+        <div className="container px-4 md:px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-block rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-800 border border-blue-200 shadow-sm mb-6">
+              <div className="flex items-center">
+                <Battery className="h-4 w-4 mr-2" />
+                <span>Coming Soon</span>
+              </div>
+            </div>
+
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6 text-gray-900">
+              EV Charger Rental Services
+            </h2>
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto">
+              Currently, we help you find public electric vehicle chargers all over India through our comprehensive network. Soon, we'll be launching charging rental services to provide portable and temporary charging solutions for events, construction sites, and emergency charging needs across the country.
+            </p>
+            <div className="bg-green-600 text-white p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-2">Stay Updated</h3>
+              <p className="mb-4">Be the first to know when our EV charger rental services launch!</p>
+              <Button className="bg-white text-green-600 hover:bg-green-50">
+                Notify Me When Available
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section id="about" className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-green-500"></div>
@@ -366,14 +395,14 @@ export default function Home() {
             <rect width="100%" height="100%" fill="url(#grid)" />
           </svg>
         </div>
-        
+
         <div className="container px-4 md:px-6 relative z-10">
           <div className="flex flex-col items-center text-center space-y-6 max-w-3xl mx-auto">
             <div className="relative h-24 w-24 bg-white rounded-full p-2 shadow-lg">
-              <Image 
-                src="/chargeway.png" 
-                alt="Chargeway Logo" 
-                fill 
+              <Image
+                src="/chargeway.png"
+                alt="Chargeway Logo"
+                fill
                 className="object-contain"
               />
             </div>
@@ -386,7 +415,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link href="/map">
                 <Button className="bg-white text-green-600 hover:bg-green-50 px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group flex items-center">
-                  Find Chargers 
+                  Find Chargers
                   <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>

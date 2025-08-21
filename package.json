@@ -1,6 +1,26 @@
 {
-  "name": "my-v0-project",
-  "version": "0.1.0",
+  "name": "chargeway-india",
+  "version": "1.0.0",
+  "description": "India's leading electric vehicle charging station finder and EV infrastructure platform with real-time availability tracking",
+  "keywords": [
+    "electric vehicle charger",
+    "EV charger finder", 
+    "ev charger rental",
+    "electric car charging stations",
+    "Tesla charging stations",
+    "CCS chargers",
+    "CHAdeMO",
+    "EV infrastructure India",
+    "electric vehicle charging",
+    "sustainable transportation"
+  ],
+  "homepage": "https://chargeway.in",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iaryasharma/chargeway"
+  },
+  "author": "Chargeway India <support@chargeway.in>",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",
